@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Reset and base styles */
 * {
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a {
     color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
 }
 
 p,
@@ -14,20 +27,6 @@ li {
     line-height: 1.6;
     font-size: 18px;
     margin-bottom: 1rem;
-    margin-left: auto;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-header img {
-    height: 45px;
-    width: 45px;
-    padding: 5px;
-    background-color: rgb(0, 247, 255);
-    border-radius: 50%;
-    display: none;
 }
 
 section img {
@@ -41,87 +40,21 @@ section img {
     width: 100%;
     max-width: 1000px;
     padding: 0 20px;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
+#problema {
+    padding: 60px 0px;
 }
 
-header,
-section,
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-
-
+/* Header/Navbar */
 header {
     display: flex;
     justify-content: center;
     background-color: rgb(0, 141, 141);
     color: #fff;
     animation: header 1s ease-out forwards;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header h1 {
-    margin: 0;
-    flex: 0 0 auto;
-    text-align: left;
-}
-
-nav {
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-nav .menu-open ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav .menu-open ul li {
-    margin: 0;
-}
-
-nav .menu-open ul span {
-    margin-left: 1rem;
-}
-
-nav .menu-open {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-nav .menu-open ul {
-    flex: 1 1 auto;
-    justify-content: flex-start;
-}
-
-nav .menu-open .theme-icons {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: auto;
-    justify-content: flex-end;
+    padding: 40px;
 }
 
 .navbar {
@@ -131,8 +64,6 @@ nav .menu-open .theme-icons {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .navbar-left {
@@ -142,7 +73,6 @@ nav .menu-open .theme-icons {
 }
 
 .navbar-left h1 {
-    margin: 0;
     font-size: 2rem;
     text-align: left;
 }
@@ -158,7 +88,6 @@ nav .menu-open .theme-icons {
     gap: 2rem;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
 .nav-menu li a {
@@ -186,7 +115,8 @@ nav .menu-open .theme-icons {
     font-size: 1.5rem;
 }
 
-/* Remove estilos antigos do header/nav */
+/* Hide unused legacy nav/menu styles */
+header img,
 header .container,
 header nav,
 header .menu-open,
@@ -196,12 +126,13 @@ header .block {
     display: none !important;
 }
 
-/* Responsivo */
+/* Responsive */
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
         align-items: stretch;
         gap: 1rem;
+        padding: 0 10px;
     }
 
     .navbar-center {
@@ -220,54 +151,18 @@ header .block {
     }
 }
 
-/* Form styling for better appearance */
-form#relatoForm {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 400px;
-    margin: 2rem auto;
-    background: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-form#relatoForm label {
-    font-weight: bold;
-}
-
-form#relatoForm input,
-form#relatoForm textarea,
-form#relatoForm select {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form#relatoForm button {
-    margin-top: 1rem;
-    padding: 0.7rem;
-    background: #004d40;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form#relatoForm button:hover {
-    background: #00796b;
-}
-
+/* Footer */
 footer {
     background-color: rgb(0, 141, 141);
     color: #fff;
+    padding: 20px;
 }
 
 footer .container {
     text-align: center;
 }
 
+/* Animation */
 @keyframes header {
     from {
         opacity: 0;
