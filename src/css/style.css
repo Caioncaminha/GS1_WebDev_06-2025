@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Reset and base styles */
 * {
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a {
     color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
 }
 
 p,
@@ -14,19 +27,6 @@ li {
     line-height: 1.6;
     font-size: 18px;
     margin-bottom: 1rem;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-header img {
-    height: 45px;
-    width: 45px;
-    padding: 5px;
-    background-color: rgb(0, 247, 255);
-    border-radius: 50%;
-    display: none;
 }
 
 section img {
@@ -40,80 +40,129 @@ section img {
     width: 100%;
     max-width: 1000px;
     padding: 0 20px;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
+#problema {
+    padding: 60px 0px;
 }
 
-header,
-section,
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-
-
+/* Header/Navbar */
 header {
     display: flex;
     justify-content: center;
     background-color: rgb(0, 141, 141);
     color: #fff;
     animation: header 1s ease-out forwards;
+    padding: 40px;
 }
 
-header .container {
+.navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar-left {
+    flex: 1;
+    display: flex;
     align-items: center;
 }
 
-header ul {
+.navbar-left h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.navbar-center {
+    flex: 2;
     display: flex;
-    gap: 30px;
+    justify-content: center;
 }
 
-header .active {
-    color: rgb(0, 247, 255);
-    border-bottom: 2px solid rgb(0, 247, 255);
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
-header a {
-    padding: 10px 0;
-    border-bottom: 2px solid transparent;
-    transition: linear 0.25s;
+.nav-menu li a {
     color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
 }
 
-header a:hover {
-    color: rgb(0, 247, 255);
-    border-bottom: 2px solid rgb(0, 247, 255);
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: #00f7ff;
 }
 
-.menu-icon,
-.menu-icon-close {
-    display: none;
-    height: 50px;
-    width: 50px;
-    background-color: #fdf8f3;
-    border-radius: 50%;
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.theme-icons {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Hide unused legacy nav/menu styles */
+header img,
+header .container,
+header nav,
+header .menu-open,
+header #menu,
+header #menu-close,
+header .block {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .navbar-center {
+        justify-content: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Footer */
 footer {
     background-color: rgb(0, 141, 141);
     color: #fff;
+    padding: 20px;
 }
 
 footer .container {
     text-align: center;
 }
 
+/* Animation */
 @keyframes header {
     from {
         opacity: 0;
