@@ -1,13 +1,19 @@
-const menu = document.querySelector('#menu');
-const menuClose = document.querySelector('#menu-close');
-const nav = document.querySelector('nav');
+const menuOpen = document.querySelector('.menu-mobile-open');
+const menuClose = document.querySelector('.menu-mobile-close');
+const menuMobile = document.querySelector('.menu-mobile');
+const menuMobileBlock = document.querySelector('.menu-mobile-block');
+const carrosel = document.querySelector('.carrosel');
 
-menu.addEventListener('click', () => {
-    nav.style.display = 'flex';
+menuOpen.addEventListener('click', () => {
+    menuMobile.style.display = 'flex';
+    menuMobileBlock.style.display = 'flex';
+    carrosel.style.display = 'none';
 })
 
 menuClose.addEventListener('click', () => {
-    nav.style.display = 'none'
+    menuMobile.style.display = 'none';
+    menuMobileBlock.style.display = 'none';
+    carrosel.style.display = 'flex';
 })
 
 function setTheme(mode) {
