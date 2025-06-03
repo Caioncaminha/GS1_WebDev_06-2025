@@ -3,7 +3,7 @@
 .carrosel {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     /* Aumenta o tamanho máximo do carrossel */
     min-width: 320px;
     margin: 40px auto;
