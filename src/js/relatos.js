@@ -10,7 +10,7 @@ document.getElementById("relatoForm").addEventListener("submit", function (event
     const descricao = document.getElementById("descricao").value.trim();
     const erro = document.getElementById("mensagemErro");
 
-    if (!nome || !email || !cidade || !data || !severidade || !descricao) {
+    if (!nome || !email || !cidade || !data || !severidade || !descricao || !telefone) {
         erro.textContent = "Por favor, preencha todos os campos obrigatórios.";
     } else if (!validateEmail(email)) {
         erro.textContent = "E-mail inválido.";
