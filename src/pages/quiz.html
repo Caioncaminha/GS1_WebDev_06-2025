@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,11 @@
         content="enchentes, Porto Alegre, alagamentos, segurança, emergências, Defesa Civil, projeto acadêmico, Pluvius Web, Anti-Floods, relato de alagamento, dicas de enchente, Engenharia de Software, primeiro semestre, FIAP">
     <title>Anti-Floods</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/tecnologia.css">
+    <link rel="stylesheet" type="text/css" href="../css/questions.css">
 </head>
 
 <body>
-    <header>
+<header>
         <div class="navbar">
             <div class="navbar-left">
                 <h1>Anti-Floods</h1>
@@ -22,8 +22,8 @@
             <div class="navbar-center">
                 <ul class="nav-menu">
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a class="active" href="quiz.html">Quiz</a></li>
-                    <li><a href="../pages/relato.html">Relatar Alagamento</a></li>
+                    <li><a class="active" href="../pages/quiz.html">Quiz</a></li>
+                    <li><a href="../assets/relato.html">Relatar Alagamento</a></li>
                 </ul>
             </div>
             <div class="navbar-right">
@@ -36,7 +36,30 @@
         </div>
     </header>
     <main>
+        <section id="questions">
+            <div class="container">
+                <h1>Questões</h1>
 
+                <div class="progress">
+                        <div class="progress--bar"></div>
+                </div>
+
+                <div class="questionArea">
+                    <div class="question">...</div>
+                    <div class="options">
+                        
+                    </div>
+                </div>
+
+                <div class="scoreArea">
+                    <img src="../assets/images/prize.png" class="prizeImage" />
+                    <div class="scoreText1">Parabéns!</div>
+                    <div class="scorePct">Acertou 99%</div>
+                    <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
+                    <button>Fazer novamente</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -45,6 +68,8 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/questions.js"></script>
+    <script src="../js/script-questions.js"></script>
 </body>
 
 </html>
