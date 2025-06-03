@@ -1,27 +1,26 @@
-h1 {
-    color: #FFF;
+#questions h1 {
+    color: #000;
     margin: 20px 0;
 }
 
 #questions {
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    height: 75vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .progress {
     height: 5px;
-    position: fixed;
+    margin-bottom: 20px;
     left: 0;
     top: 0;
     right: 0;
 }
 .progress--bar {
-    background-color: #0000FF;
+    background-color: #0000ff;
     height: 100%;
     transition: all ease .5s;
 }
@@ -37,21 +36,23 @@ h1 {
 }
 
 .question {
-    color: #FFF;
+    color: #000;
     font-size: 18px;
     margin: 20px 0;
 }
+
 .option {
     display: flex;
     align-items: center;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 50px;
+    background-color: rgba(0, 141, 141, 0.3);
     border-radius: 10px;
-    margin-bottom: 5px;
-    color: #AAA;
+    margin-bottom: 10px;
+    color: #000;
     font-size: 16px;
     cursor: pointer;
 }
+
 .option span {
     display: flex;
     justify-content: center;
@@ -61,15 +62,18 @@ h1 {
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #555;
+    background-color: rgba(0, 141, 141, 0.8);
+    color: #fff;
+    font-weight: bold;
 }
+
 .option:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 141, 141, 0.2);
 }
 
 .scoreArea {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 247, 255, 0.2);
+    border: 10px solid rgb(0, 141, 141);
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
@@ -87,7 +91,7 @@ h1 {
     margin-bottom: 10px;
 }
 .scorePct {
-    color: #0d630d;
+    color: #00ff00;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -101,12 +105,13 @@ h1 {
 .scoreArea button {
     border: 0;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #CCC;
-    padding: 10px;
+    background-color: rgba(0, 255, 0, 0.8);
+    color: #fff;
+    padding: 20px 30px;
     margin-top: 20px;
+    font-size: 20px;
     cursor: pointer;
 }
 .scoreArea button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 255, 0, 0.4);
 }

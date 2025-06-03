@@ -1,104 +1,102 @@
 let questions = [
     {
-        question: 'Em qual elemento HTML nós colocamos o javascript?',
+        question: 'Qual o nível do Rio Guaíba que marca o início da inundação em Porto Alegre?',
         options: [
-            'tag js',
-            'tag script',
-            'tag scripting',
-            'tag javascript'
+            '3,6 metros', 
+            '4,5 metros', 
+            '2,0 metros', 
+            '3,0 metros'
         ],
-        answer: 1
+        answer: 0
     },
     {
-        question: 'Onde é o local certo de colocar o javascript?',
+        question: 'Qual órgão deve ser acionado em casos de emergência por alagamento?',
         options: [
-            'Na tag body',
-            'Na tag head',
-            'Tanto na tag body quanto a head estão corretas'
+            'Polícia Militar (190)', 
+            'SAMU (192)', 
+            'Defesa Civil (199)', 
+            'Bombeiros (193)'
         ],
         answer: 2
     },
     {
-        question: 'Qual a sintaxe correta para adicionar um arquivo javascript externo na tag script?',
+        question: 'Qual das ações abaixo é recomendada durante uma enchente?',
         options: [
-            'name="xxx.js"',
-            'src="xxx.js"',
-            'href="xxx.js"'
+            'Evitar contato com a água da enchente', 
+            'Andar em ruas alagadas', 
+            'Ficar em casa em áreas de risco', 
+            'Usar eletrônicos próximos à água'
+        ],
+        answer: 0
+    },
+    {
+        question: 'Qual foi um dos bairros mais afetados pelas enchentes em Porto Alegre em 2024?',
+        options: [
+            'Restinga', 
+            'Cidade Baixa', 
+            'Três Figueiras', 
+            'Moinhos de Vento'
         ],
         answer: 1
     },
     {
-        question: 'Um arquivo javascript externo precisa ter a tag script',
+        question: 'O que deve ser feito antes de uma previsão de enchente?',
         options: [
-            'Verdade',
-            'Falso'
+            'Guardar documentos e objetos importantes em locais altos', 
+            'Abrir as janelas para ventilação', 
+            'Nada, apenas esperar', 
+            'Esperar confirmação oficial para agir'
+        ],
+        answer: 0
+    },
+    {
+        question: 'Por que a água de enchente pode ser perigosa à saúde?',
+        options: [
+            'Contém lixo e esgoto', 
+            'Ela é muito fria', 
+            'Pode ter peixes grandes', 
+            'Causa sede'
+        ],
+        answer: 0
+    },
+    {
+        question: 'Qual sistema de alerta pode ser usado para avisos de enchentes em Porto Alegre?',
+        options: [
+            'Correios', 
+            'Sirenes comunitárias e SMS da Defesa Civil', 
+            'WhatsApp da Prefeitura', 
+            'Aplicativos de transporte'
         ],
         answer: 1
     },
     {
-        question: 'Como escrever um "Olá Mundo" em um alertbox?',
+        question: 'Qual o papel da população após uma enchente?',
         options: [
-            'alertBox("Olá Mundo")',
-            'msgBox("Olá Mundo")',
-            'msg("Olá Mundo")',
-            'alert("Olá Mundo")'
+            'Voltar para casa logo após a água baixar', 
+            'Postar nas redes sociais apenas', 
+            'Ignorar os alertas para não causar pânico', 
+            'Ajudar na limpeza e seguir orientações da Defesa Civil'
         ],
         answer: 3
     },
     {
-        question: 'Como você cria uma função no Javascript?',
+        question: 'Qual a atitude correta ao ver uma pessoa ilhada durante alagamento?',
         options: [
-            'function:minhaFuncao()',
-            'function = minhaFuncao()',
-            'function minhaFuncao()'
+            'Filmar para divulgar', 
+            'Entrar na água para ajudar', 
+            'Ligar para a Defesa Civil ou Bombeiros', 
+            'Esperar a chuva passar'
         ],
         answer: 2
     },
     {
-        question: 'Como chamar uma função chamada "minhaFuncao"?',
+        question: 'O que pode agravar os efeitos de enchentes urbanas?',
         options: [
-            'call minhaFuncao',
-            'call function minhaFuncao',
-            'minhaFuncao()'
+            'Educação ambiental', 
+            'Construção de parques e áreas verdes', 
+            'Sistemas de drenagem eficientes', 
+            'Lixo nas ruas e ocupação desordenada'
         ],
-        answer: 2
-    },
-    {
-        question: 'Como escrever uma condicional IF no Javascript?',
-        options: [
-            'if i = 5',
-            'if i == 5 then',
-            'if (i == 5)',
-            'if i = 5 then'
-        ],
-        answer: 2
-    },
-    {
-        question: 'Como fazer um if que executa um código caso "i" for diferente de 5',
-        options: [
-            'if (i != 5)',
-            'if (i <> 5)',
-            'if i <> 5',
-            'if i =! 5 then'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Como o loop while começa?',
-        options: [
-            'while (i <= 10)',
-            'while (i <= 10; i++)',
-            'while i = 1 to 10'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Gostou do projeto?',
-        options: [
-            'Sim',
-            'Não',
-            'Talvez'
-        ],
-        answer: 0
-    },
+        answer: 3
+    }
 ];
