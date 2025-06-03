@@ -29,7 +29,7 @@ function setTheme(mode) {
         bgColorF = '#005c5c';
         bgColor = "#111";
         textColor = "#fff";
-        formBg = "#111";      // Formulário preto
+        formBg = "#aaa";      // Formulário cinza
         formText = "#fff";    // Texto branco no formulário
     } else if (mode === "blue") {
         bgColorH = '#036e8f';
