@@ -115,17 +115,6 @@ header {
     font-size: 1.5rem;
 }
 
-/* Hide unused legacy nav/menu styles */
-header img,
-header .container,
-header nav,
-header .menu-open,
-header #menu,
-header #menu-close,
-header .block {
-    display: none !important;
-}
-
 /* Responsive */
 @media (max-width: 700px) {
     .navbar {
@@ -156,9 +145,6 @@ footer {
     background-color: rgb(0, 141, 141);
     color: #fff;
     padding: 20px;
-}
-
-footer .container {
     text-align: center;
 }
 

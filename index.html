@@ -39,7 +39,20 @@
         <section id="problema">
             <div class="container">
                 <h1>Enchentes em Porto Alegre</h1>
-                <img src="src/assets/images/problema.png" alt="Enchente em rua de Porto Alegre">
+                <!-- Carrossel de imagens -->
+                <div class="carrosel">
+                    <button class="carrosel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+                    <div class="carrosel-images">
+                        <img src="src/assets/images/problema.png" alt="Enchente em Porto Alegre"
+                            class="carrosel-img active">
+                        <img src="src/assets/images/enchente2.png" alt="Imagem 2" class="carrosel-img">
+                        <img src="src/assets/images/enchente3.png" alt="Imagem 3" class="carrosel-img">
+                        <img src="src/assets/images/enchente4.png" alt="Imagem 4" class="carrosel-img">
+                        <img src="src/assets/images/enchente5.png" alt="Imagem 5" class="carrosel-img">
+                    </div>
+                    <button class="carrosel-btn next" aria-label="Próxima imagem">&#10095;</button>
+                </div>
+                <!-- Fim do carrossel -->
                 <p>O estado do Rio Grande do Sul viveu em 2024 a maior crise climática da sua história. Porto Alegre
                     teve bairros inteiros alagados por dias. Muitas vítimas não sabiam como agir.</p>
                 <p>Falta um sistema simples, acessível e funcional para informar a população em momentos críticos,
@@ -56,6 +69,7 @@
         </div>
     </footer>
     <script src="src/js/script.js"></script>
+    <script src="src/js/carrosel.js"></script>
 </body>
 
 </html>
