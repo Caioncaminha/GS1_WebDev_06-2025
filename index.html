@@ -15,20 +15,24 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1>Anti-Floods</h1>
-            <img id="menu" src="src/assets/images/icon-menu.png">
-            <nav>
-                <div class="block"></div>
-                <div class="menu-open">
-                    <img id="menu-close" src="src/assets/images/icon-menu-close.png">
-                    <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="src/pages/quiz.html">Quiz</a></li>
-                        <li><a href="src/pages/relato.html">Relatar Alagamento</a></li>
-                    </ul>
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>Anti-Floods</h1>
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-menu">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="src/pages/quiz.html">Quiz</a></li>
+                    <li><a href="src/pages/relato.html">Relatar Alagamento</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="theme-icons">
+                    <span onclick="setTheme('light')" style="cursor:pointer;">☀️</span>
+                    <span onclick="setTheme('dark')" style="cursor:pointer;">🌙</span>
+                    <span onclick="setTheme('blue')" style="cursor:pointer;">💧</span>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
